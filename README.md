@@ -6,11 +6,17 @@ These standards are only applied to Input CSS and not Output CSS. With ever expa
 
 ## Spaces and Indentation
 Use 4 spaces instead of tabs for indentation
+
 Opening braces must have 1 space between them and the last selector
+
 Closing brace must be on it's own line
-1 space must seperate the declaration property and the value. This space should follow the colon. There should be no space between the property and colon.
+
+1 space must seperate the declaration property and the value. This space should follow the colon. There should be no space between the property and colon
+
 There must not be trailing whitespace on declarations
+
 Blank lines may be used to separate blocks of code but no more than 2 blank lines should be used
+
 Indent all block content
 
 ### Example code block
