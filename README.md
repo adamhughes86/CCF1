@@ -64,7 +64,7 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 ### 3. Declaration Order
 - Declarations **must** be on their own line
 - Declarations *should* be alphabetised
-- Vendor prefixes **must** immediately follow their unprefixed version. Vendor Prefixes should also be alphabetical order
+- Vendor prefixes **must** immediately preceed their unprefixed version. Vendor Prefixes should also be alphabetical order
 
 #### 3.1. Declaration Order - Preprocessors
 - Declarations in mixins and extends *should* be alphabetised
@@ -80,10 +80,10 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
       @include font-size(16);
 
       background-color: #ebe;
-      border-radius: 5px;
       bottom: 0;
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
+      border-radius: 5px;
       clear: both;
       color: #000;
       content: 'Pretty important';
@@ -152,9 +152,9 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 
       // Misc
       background-color: #ebe;
-      border-radius: 5px;
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
+      border-radius: 5px;
       opacity: 1;
     }
 
