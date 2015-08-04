@@ -11,3 +11,6 @@ If you want to make suggestions feel free to leave it as an issue or make a pull
 
 ## Why are the declarations sorted alphabetically?
 I considered using a grouped by type method for quite a while but decided that it still led to some ambiguity. Grouping by type will definately suit some people more but I wanted to create a standard that could be used easily and quickly.
+
+## Who are the people responsible for the standard?
+Just me, Adam Hughes at the moment. I would like to get additional people on board though.
