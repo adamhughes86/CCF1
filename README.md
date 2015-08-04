@@ -97,6 +97,7 @@ These standards are only applied to Input CSS and not Output CSS. With ever expa
 
 ##### Example code block
     .item {
+        background: transparent url('/images/pattern.png') 0 0 repeat-x;
         border: 1px solid #ebe;
         color: #000;
         font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
