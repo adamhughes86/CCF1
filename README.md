@@ -110,6 +110,7 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
       z-index: 0;
 
       // Box model
+      clear: both;
       display: block;
       float: left;
       margin: 20px 0;
@@ -119,7 +120,6 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
       max-height: 120px;
       max-width: 800px;
       overflow: hidden;
-      clear: both;
 
       // Type
       color: #000;
