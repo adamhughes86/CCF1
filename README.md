@@ -81,11 +81,32 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 
       background-color: #ebe;
       border-radius: 5px;
+      bottom: 0;
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
+      clear: both;
+      color: #000;
+      content: 'Pretty important';
+      display: block;
+      float: left;
+      font-family: 'Arial', sans-serif;
       height: 120px;
+      left: 0;
+      line-height: 1.2;
+      margin: 20px 0;
+      max-height: 120px;
+      max-width: 800px;
+      opacity: 1;
       overflow: hidden;
+      padding: 10px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-align: left;
+      text-decoration: none;
+      text-indent: 0;
       width: 100%;
+      z-index: 0;
     }
 
 ### 3.2. Declaration Order - Alternative Proposal
