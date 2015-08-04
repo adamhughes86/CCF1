@@ -14,3 +14,6 @@ I considered using a grouped by type method for quite a while but decided that i
 
 ## Who are the people responsible for the standard?
 Just me, Adam Hughes at the moment. I would like to get additional people on board though.
+
+## What inspired this project?
+I've noticed over the past couple of years the growth of internal styleguides. Google, Git and many others publish their coding styleguides for everyone to see and they're all a bit different. They do share quite a lot of similarities though, most of which I agreed with. Also many other languages (PHP has PSR for example) have styleguides so I thought why not CSS. With the growth of Preprocessors as well has come with a variety of ways to write CSS. Having a standard can help with consistency across all of these different subsets of CSS. Lastly I wanted to put something in place for myself and my team and thought that if it was shared more people may get on board.
