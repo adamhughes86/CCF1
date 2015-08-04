@@ -18,20 +18,20 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 
 ##### Example code block
     .nav {
-        background-color: #ebe;
-        height: 120px;
-        width: 100%;
+      background-color: #ebe;
+      height: 120px;
+      width: 100%;
     }
     .nav-item {
-        display: inline;
-        padding: 10px 20px;
+      display: inline;
+      padding: 10px 20px;
     }
 
     @media (max-width: 600px) {
-        .item {
-            display: block;
-            text-align:center;
-        }
+      .item {
+        display: block;
+        text-align:center;
+      }
     }
 
 #### 2.1. Spaces and Indentation - Preprocessors
@@ -42,23 +42,23 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 
 ##### Example code block
     .nav {
-        background-color: #ebe;
-        height: 120px;
-        width: 100%;
+      background-color: #ebe;
+      height: 120px;
+      width: 100%;
 
-        &:before {
-            content: 'The nav is here:';
-            display: inline;
-            padding: 10px 20px;
-        }
-        &-item {
-            display: inline;
-            padding: 10px 20px;
+      &:before {
+        content: 'The nav is here:';
+        display: inline;
+        padding: 10px 20px;
+      }
+      &-item {
+        display: inline;
+        padding: 10px 20px;
 
-            &:hover {
-                text-decoration: underline;
-            }
+        &:hover {
+          text-decoration: underline;
         }
+      }
     }
 
 ### 3. Declaration Order
@@ -75,17 +75,17 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 
 ##### Example code block
     .item {
-        @extend .link;
+      @extend .link;
 
-        @include font-size(16);
+      @include font-size(16);
 
-        background-color: #ebe;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        height: 120px;
-        overflow: hidden;
-        width: 100%;
+      background-color: #ebe;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      height: 120px;
+      overflow: hidden;
+      width: 100%;
     }
 
 ### 4. Value Formatting
@@ -102,17 +102,17 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 
 ##### Example code block
     .item {
-        background: transparent url('/images/pattern.png') 0 0 repeat-x;
-        border: 1px solid #ebe;
-        color: #000;
-        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-        font-size: 0.9em;
-        margin: 20px 5px;
-        padding: 0 10px;
+      background: transparent url('/images/pattern.png') 0 0 repeat-x;
+      border: 1px solid #ebe;
+      color: #000;
+      font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+      font-size: 0.9em;
+      margin: 20px 5px;
+      padding: 0 10px;
     }
 
     @media (max-width: 600px) {
-        .item {
-            margin-bottom: 10px;
-        }
+      .item {
+        margin-bottom: 10px;
+      }
     }
