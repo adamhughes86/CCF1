@@ -97,7 +97,7 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 - Always wrap strings in quotations
 - Values in `font-family` should all be individually wrapped in quotes except for final fallback value (e.g. `sans-serif, serif, monotype`)
 - Values **must** end with semi-colon
-- Include leading 0's in values
+- Include leading 0's in values for legibility (e.g. `font-size: .9em;` should be written `font-size: 0.9em;`)
 - Commenting should be handled with `//` in preprocessors
 
 ##### Example code block
