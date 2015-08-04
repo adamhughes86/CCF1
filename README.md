@@ -25,7 +25,7 @@ Indent all block content
         height: 120px;
         width: 100%;
     }
-    .item {
+    .nav-item {
         display: inline;
         padding: 10px 20px;
     }
@@ -34,6 +34,36 @@ Indent all block content
         .item {
             display: block;
             text-align:center;
+        }
+    }
+
+#### 2.1. Spaces and Indentation - Preprocessors
+Nested Pseudo Classes and Pseudo Elements should follow all declarations
+
+There should be 1 blank line between Nested elements and Declarations
+
+Nested Selectors should be last
+
+Do not nest more than three levels deep
+
+##### Example code block
+    .nav {
+        background-color: #ebe;
+        height: 120px;
+        width: 100%;
+
+        &:before {
+            content: 'The nav is here:';
+            display: inline;
+            padding: 10px 20px;
+        }
+        &-item {
+            display: inline;
+            padding: 10px 20px;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
