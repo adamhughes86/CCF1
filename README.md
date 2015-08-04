@@ -67,9 +67,11 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 - Vendor prefixes **must** immediately preceed their unprefixed version. Vendor Prefixes should also be alphabetical order
 
 #### 3.1. Declaration Order - Preprocessors
-- Declarations in mixins and extends *should* be alphabetised
+- Declarations *should* be ordered by group (`Content`, `Position`, `Box Model`, `Typography`, `Visual`, `Misc`)
+- Declarations within groups *should* be ordered by type or alphabetically
 - Extends *should* be listed at the top of the declaration
 - Mixins and Functions *should* follow Extends
+- Mixins with one clear function (such as providing a fallback) should be placed within correct group (e.g. `font-size` and `linear-gradient` mixins)
 - Standard CSS properties *should* be last
 - Blank lines can be used to separate extends, mixins and declarations from each other
 
@@ -77,47 +79,7 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
     .item {
       @extend .link;
 
-      @include font-size(16);
-
-      background-color: #ebe;
-      bottom: 0;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      clear: both;
-      color: #000;
-      content: 'Pretty important';
-      display: block;
-      float: left;
-      font-family: 'Arial', sans-serif;
-      height: 120px;
-      left: 0;
-      line-height: 1.2;
-      margin: 20px 0;
-      max-height: 120px;
-      max-width: 800px;
-      opacity: 1;
-      overflow: hidden;
-      padding: 10px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      text-align: left;
-      text-decoration: none;
-      text-indent: 0;
-      width: 100%;
-      z-index: 0;
-    }
-
-### 3.2. Declaration Order - Alternative Proposal
-- Declarations *should* be ordered by group
-- Misc declarations *should* be ordered alphabetically
-
-##### Example code block
-    .item {
-      @extend .link;
-
-      @include font-size(16);
+      @include decoration(wide);
 
       // Content
       content: 'Pretty important';
@@ -142,21 +104,28 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
       max-width: 800px;
       overflow: hidden;
 
-      // Type
+      // Typography
       color: #000;
       font-family: 'Arial', sans-serif;
+      @include font-size(16);
       line-height: 1.2;
       text-align: left;
       text-decoration: none;
       text-indent: 0;
 
-      // Misc
+      // Visual
       background-color: #ebe;
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px;
       border-radius: 5px;
       opacity: 1;
+      transition: all 0.5s;
+
+      // Misc
+      // Can be used for any styles that do not fit into these groups
     }
+
+This list of styles is not exhaustive and more styles can be placed within each group. Try to keep some sort of order within groups whether it's by type or alphabetically. The comments are for demostrative purposes only.
 
 ### 4. Value Formatting
 - Do not use unit values after `0` values
