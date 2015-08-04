@@ -85,7 +85,27 @@ These standards are only applied to Input CSS and not Output CSS. With ever expa
     }
 
 ### 4. Value Formatting
-To do
+- Do not use unit values after "0" values
+- Use shorthand properties when you can
+- If only overriding one value your should use longhand form to avoid unneccesary changes
+- Use 3 character Hexademical values when possible
+- Use single quotation marks instead of double
+- Always wrap strings in quotations
+- Values in font-family should all be individually wrapped in quotes except for final fallback value (e.g. sans-serif, serif, monotype)
+- Values should always end with semi-colon
+- Include leading 0's in values
 
-### 5. Preprocessor Guidelines
-To do
+##### Example code block
+    .item {
+        border: 1px solid #ebe;
+        color: #000;
+        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+        font-size: 0.9em;
+        margin: 20px 5px;
+        padding: 0 10px;
+    }
+    @media (max-width: 600px) {
+        .item {
+            margin-bottom: 10px;
+        }
+    }
