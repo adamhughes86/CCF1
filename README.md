@@ -88,6 +88,55 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
       width: 100%;
     }
 
+### 3.2. Declaration Order - Alternative Proposal
+- Declarations *should* be ordered by group
+- Misc declarations *should* be ordered alphabetically
+
+##### Example code block
+    .item {
+      @extend .link;
+
+      @include font-size(16);
+
+      // Content
+      content: 'Pretty important';
+
+      // Positioning
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+
+      // Box model
+      display: block;
+      float: left;
+      margin: 20px 0;
+      padding: 10px;
+      height: 120px;
+      width: 100%;
+      max-height: 120px;
+      max-width: 800px;
+      overflow: hidden;
+      clear: both;
+
+      // Type
+      color: #000;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.2;
+      text-align: left;
+      text-decoration: none;
+      text-indent: 0;
+
+      // Misc
+      background-color: #ebe;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      opacity: 1;
+    }
+
 ### 4. Value Formatting
 - Do not use unit values after `0` values
 - Use shorthand properties when you can
