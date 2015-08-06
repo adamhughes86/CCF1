@@ -15,6 +15,7 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 - Blank lines may be used to separate blocks of code but no more than 2 blank lines should be used
 - Indent all block content
 - When grouping selectors, individual selectors **must** be on separate lines
+- There *must* be a blank line at the end of every file
 
 ##### Example code block
     .nav {
