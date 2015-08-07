@@ -17,11 +17,11 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 - When grouping selectors, individual selectors **must** be on separate lines
 - There **must** be a blank line at the end of every file
 
-##### Example code block
+##### Example
     .nav {
-      background-color: #ebe;
       height: 120px;
       width: 100%;
+      background-color: #ebe;
     }
     .nav-item {
       display: inline;
@@ -41,11 +41,11 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 - Nested Selectors *should* be last
 - You *should not* nest more than three levels deep
 
-##### Example code block
+##### Example
     .nav {
-      background-color: #ebe;
       height: 120px;
       width: 100%;
+      background-color: #ebe;
 
       &:before {
         content: 'The nav is here:';
@@ -76,7 +76,7 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 - Standard CSS properties *should* be last
 - Blank lines can be used to separate extends, mixins and declarations from each other
 
-##### Example code block
+##### Example
     .item {
       @extend .link;
 
@@ -126,7 +126,7 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
       // Can be used for any styles that do not fit into these groups
     }
 
-This list of styles is not exhaustive and more styles can be placed within each group. Try to keep some sort of order within groups whether it's by type or alphabetically. The comments are for demostrative purposes only.
+**The comments are for demostrative purposes only.** This list of styles is not exhaustive and more styles can be placed within each group. Try to keep some sort of order within groups whether it's by type or alphabetically.
 
 ### 4. Value Formatting
 - Do not use unit values after `0` values
@@ -138,21 +138,40 @@ This list of styles is not exhaustive and more styles can be placed within each 
 - Values in `font-family` should all be individually wrapped in quotes except for final fallback value (e.g. `sans-serif, serif, monotype`)
 - Values **must** end with semi-colon
 - Include leading 0's in values for legibility (e.g. `font-size: .9em;` should be written `font-size: 0.9em;`)
-- Commenting should be handled with `//` in preprocessors
 
-##### Example code block
+##### Example
     .item {
-      background: transparent url('/images/pattern.png') 0 0 repeat-x;
-      border: 1px solid #ebe;
+      margin: 20px 5px;
+      padding: 0 10px;
       color: #000;
       font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
       font-size: 0.9em;
-      margin: 20px 5px;
-      padding: 0 10px;
+      background: transparent url('/images/pattern.png') 0 0 repeat-x;
+      border: 1px solid #ebe;
     }
 
     @media (max-width: 600px) {
       .item {
         margin-bottom: 10px;
       }
+    }
+
+### 5. Commenting
+- Comment tags *should* be a double slash `//` in Preprocessors and a simple slash-asterisk pattern in plain CSS `/* Comment */
+- Inline comments describing a declaration **must** be placed at the end of the value with a space either side of the comment tag
+- Block level comments about a **must** should be placed immediately above the selector and have one blank line above
+- Any comments describing whole components *should* follow the KSS commenting standard
+- Use comments to describe any elements that the code is unclear or if code may need to be explained
+
+##### Example
+    .nav {
+      width: 100%
+    }
+
+    // Comment about this item
+    .item {
+      margin: 20px 5px; // Comment describing this properties effect
+      padding: 0 10px;
+      color: #000;
+      border: 1px solid #ebe;
     }
