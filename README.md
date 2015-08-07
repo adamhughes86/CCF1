@@ -157,7 +157,7 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
     }
 
 ### 5. Commenting
-- Comment tags *should* be a double slash `//` in Preprocessors and a simple slash-asterisk pattern in plain CSS `/* Comment */
+- Comment tags *should* be a double slash `//` in Preprocessors and a simple slash-asterisk pattern in plain CSS `/* Comment */`
 - Inline comments describing a declaration **must** be placed at the end of the value with a space either side of the comment tag
 - Block level comments about a **must** should be placed immediately above the selector and have one blank line above
 - Any comments describing whole components *should* follow the KSS commenting standard
