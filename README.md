@@ -72,7 +72,7 @@ These standards are only applied to *Input CSS* and not *Output CSS*. With ever 
 - Declarations within groups *should* be ordered by type or alphabetically
 - Extends *should* be listed at the top of the declaration
 - Mixins and Functions *should* follow Extends
-- Mixins with one clear function (such as providing a fallback) should be placed within correct group (e.g. `font-size` and `linear-gradient` mixins)
+- Mixins with one clear function (such as providing a fallback) *should* be placed within correct group (e.g. `font-size`, `linear-gradient` and `transition` mixins)
 - Standard CSS properties *should* be last
 - Blank lines can be used to separate extends, mixins and declarations from each other
 
